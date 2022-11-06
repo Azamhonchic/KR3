@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" >
+</head>
+<body>
+    <div class="block_top">
+        <h1>Учет сотрудников в компании WePro</h1>
+        <h3 id="toRegard">Общее число сотрудников:  </h3>
+        <h4>Премию получат: <span class = 'reg'>0</span></h4>
+    </div>
+    <center>
+        <div class="main_top">
+            <input type="text" name="search" class="search" id="" placeholder="Найти сотрудника">
+            <div class="btns">
+                <button class="vse">Все сотрудники</button>
+                <button class="povisa">На повышение</button>
+                <button class="filo">З/П больше 1000$</button>
+            </div>
+        </div>
+        
+
+
+        <table class="in_main">
+        </table>
+        <div class="main_bot">
+            <h1>Добавьте нового сотрудника</h1>
+            <form name="form">
+                <input type="name" name="name" id="name" placeholder="Как его зовут?">
+                <input type="number" name="salary" id="salary" placeholder="З/П в $?">
+                <button>Добавить</button>
+            </form>
+        </div>
+
+
+    </center>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
